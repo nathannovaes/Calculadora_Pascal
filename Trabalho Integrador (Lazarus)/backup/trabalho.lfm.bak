@@ -1,8 +1,46 @@
 object Form1: TForm1
-  Left = 1069
-  Height = 240
-  Top = 274
-  Width = 320
+  Left = 1120
+  Height = 169
+  Top = 350
+  Width = 221
   Caption = 'Form1'
+  ClientHeight = 169
+  ClientWidth = 221
   LCLVersion = '1.6.4.0'
+  object BtnConversaoDB: TButton
+    Left = 8
+    Height = 33
+    Top = 8
+    Width = 208
+    Caption = 'Conversão de decimal para binário'
+    OnClick = BtnConversaoDBClick
+    TabOrder = 0
+  end
+  object BtnConversaoBD: TButton
+    Left = 8
+    Height = 33
+    Top = 48
+    Width = 208
+    Caption = 'Conversão de binário para decimal'
+    OnClick = BtnConversaoBDClick
+    TabOrder = 1
+  end
+  object BtnSoma: TButton
+    Left = 8
+    Height = 33
+    Top = 88
+    Width = 208
+    Caption = 'Soma de binários'
+    OnClick = BtnSomaClick
+    TabOrder = 2
+  end
+  object BtnCalculadora: TButton
+    Left = 8
+    Height = 33
+    Top = 128
+    Width = 208
+    Caption = 'Calculadora lógica'
+    OnClick = BtnCalculadoraClick
+    TabOrder = 3
+  end
 end

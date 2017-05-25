@@ -1,43 +1,46 @@
 object Form1: TForm1
-  Left = 1078
-  Height = 317
-  Top = 221
-  Width = 402
+  Left = 1120
+  Height = 169
+  Top = 350
+  Width = 221
   Caption = 'Form1'
-  ClientHeight = 317
-  ClientWidth = 402
+  ClientHeight = 169
+  ClientWidth = 221
   LCLVersion = '1.6.4.0'
-  object Button1: TButton
-    Left = 0
-    Height = 30
-    Top = 0
-    Width = 133
-    Caption = 'Button1'
-    OnClick = Button1Click
+  object BtnConversaoDB: TButton
+    Left = 8
+    Height = 33
+    Top = 8
+    Width = 208
+    Caption = 'Conversão de decimal para binário'
+    OnClick = BtnConversaoDBClick
     TabOrder = 0
   end
-  object Button2: TButton
-    Left = 184
-    Height = 31
-    Top = 0
-    Width = 131
-    Caption = 'Button2'
+  object BtnConversaoBD: TButton
+    Left = 8
+    Height = 33
+    Top = 48
+    Width = 208
+    Caption = 'Conversão de binário para decimal'
+    OnClick = BtnConversaoBDClick
     TabOrder = 1
   end
-  object Button3: TButton
-    Left = 0
-    Height = 32
-    Top = 32
-    Width = 133
-    Caption = 'Button3'
+  object BtnSoma: TButton
+    Left = 8
+    Height = 33
+    Top = 88
+    Width = 208
+    Caption = 'Soma de binários'
+    OnClick = BtnSomaClick
     TabOrder = 2
   end
-  object Button4: TButton
-    Left = 184
+  object BtnCalculadora: TButton
+    Left = 8
     Height = 33
-    Top = 32
-    Width = 131
-    Caption = 'Button4'
+    Top = 128
+    Width = 208
+    Caption = 'Calculadora lógica'
+    OnClick = BtnCalculadoraClick
     TabOrder = 3
   end
 end
