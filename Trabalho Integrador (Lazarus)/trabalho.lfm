@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 1120
-  Height = 169
-  Top = 350
-  Width = 221
+  Left = 1040
+  Height = 170
+  Top = 360
+  Width = 225
   Caption = 'Form1'
-  ClientHeight = 169
-  ClientWidth = 221
+  ClientHeight = 170
+  ClientWidth = 225
   LCLVersion = '1.6.4.0'
   object BtnConversaoDB: TButton
     Left = 8
@@ -42,5 +42,71 @@ object Form1: TForm1
     Caption = 'Calculadora lógica'
     OnClick = BtnCalculadoraClick
     TabOrder = 3
+  end
+  object BtnVoltar: TButton
+    Left = 352
+    Height = 32
+    Top = 208
+    Width = 89
+    Caption = 'Voltar'
+    OnClick = BtnVoltarClick
+    TabOrder = 4
+  end
+  object BtnCalcular: TButton
+    Left = 256
+    Height = 32
+    Top = 208
+    Width = 89
+    Caption = 'Calcular'
+    TabOrder = 5
+    Visible = False
+  end
+  object LabelTitulo: TLabel
+    Left = 0
+    Height = 31
+    Top = 10
+    Width = 442
+    Alignment = taCenter
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    Visible = False
+  end
+  object LabelSubTitulo: TLabel
+    Left = 16
+    Height = 1
+    Top = 64
+    Width = 1
+    ParentColor = False
+    Visible = False
+  end
+  object LabelSubTitulo2: TLabel
+    Left = 16
+    Height = 1
+    Top = 128
+    Width = 1
+    ParentColor = False
+    Visible = False
+  end
+  object TextoUm: TEdit
+    Left = 16
+    Height = 23
+    Top = 80
+    Width = 89
+    TabOrder = 6
+    Visible = False
+  end
+  object TextoDois: TEdit
+    Left = 16
+    Height = 23
+    Top = 144
+    Width = 89
+    TabOrder = 7
+    Visible = False
   end
 end
