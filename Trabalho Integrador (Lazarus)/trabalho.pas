@@ -21,6 +21,7 @@ type
     BtnCalcular: TButton;
     DigitadoDois: TLabel;
     DigitadoUm: TLabel;
+    LabelRespostaLogica: TLabel;
     LabelResposta: TLabel;
     RadioAnd: TRadioButton;
     RadioOr: TRadioButton;
@@ -50,7 +51,7 @@ var
   Form1: TForm1;
   a, i, vetor, valor, dec, valorDec, saidaMenu, seleciona, bits, respostaLogica,
   operacao : integer;
-  num, biUm, biDois, recebeNumero : string;
+  num, biUm, biDois, recebeNumero, resLogicFinal : string;
   binarioUm, binarioDois, respostaOr, respostaXor, respostaNor, respostaXnor,
   respostaAnd, respostaNand, binario : array[1..8] of integer;
 
@@ -78,6 +79,7 @@ begin
   Form1.LabelTitulo.Visible := true;
   Form1.LabelSubTitulo.Visible := true;
   Form1.BtnCalcular.Visible := true;
+  Form1.BtnVoltar.Visible := true;
   Form1.TextoUm.Visible := true;
 
   //Partes que escondem
@@ -458,8 +460,23 @@ begin
                          respostaLogica := respostaLogica + respostaNand[i];
                     end;
                end;
+
         end;
         LabelResposta.Caption := 'Resposta: ' + recebeNumero;
+        if respostaLogica = 8 then
+        begin
+             resLogicFinal := '(Tautologia)';
+        end;
+        if respostaLogica = 0 then
+        begin
+             resLogicFinal := '(Contradição)';
+        end;
+        if (respostaLogica > 0) and (respostaLogica < 8) then
+        begin
+             resLogicFinal := '(Contigência)';
+        end;
+
+        LabelRespostaLogica.Caption := resLogicFinal;
         LabelResposta.Visible := true;
         TextoUm.Clear;
         TextoDois.Clear;
@@ -489,7 +506,7 @@ begin
   Form1.EscolhaOperacao.Visible := false;
 
   //Tamanho da tela
-  Form1.Width := 225;
+  Form1.Width := 270;
   Form1.Height := 170;
 end;
 end.
